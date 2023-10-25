@@ -13,3 +13,175 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: stretch;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 18px 0;
+}
+
+
+body {
+  line-height: 18px;
+  font-size: 13px;
+}
+
+.book-title {
+  display: block;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.book-body {
+  display: block;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.book1 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 280px;
+  font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  
+}
+
+.book-link {
+  padding-bottom: 7px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 18px 0;
+}
+
+
+h4 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.flash {
+  color: green;
+}
+
+
+strong {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.link {
+  color: black;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.link:hover {
+  color: white;
+  background-color: black;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.f {
+  margin-bottom: 10px;
+}
+
+.fo {
+  margin-bottom: 0;
+}
+
+.create {
+}
+
+.center {
+  position: relative;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+.special-text {
+  font-weight: bold;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul {
+  font-size: 12px;
+  list-style: square;
+  margin: 33px;
+  padding-left: 40px;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
