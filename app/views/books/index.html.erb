@@ -46,25 +46,32 @@
          </div>
        <% end %>
        
-       <div class="fo">
-         <%= form.label :Title %>
-       </div>
-       <div class="f">
-         <%= form.text_field :title %>
-       </div>
+           <div>
+             <% if @book.errors[:title].any? %>
+               <label style="background-color: red;"><%= form.label :title %></label>
+             <% else %>
+               <label><%= form.label :title %></label>
+             <% end %>
+           </div>
+           <div class="f">
+             <%= form.text_field :title %>
+           </div>
        
-       <div class="fo">
-         <%= form.label :Body %>
-       </div>
-       <div class="f">
-         <%= form.text_area :body %> 
-       </div>
+           <div>
+             <% if @book.errors[:body].any? %>
+               <label style="background-color: red;"><%= form.label :body %></label>
+             <% else %>
+               <label><%= form.label :body %></label>
+             <% end %>
+           </div>
+           <div class="f">
+             <%= form.text_area :body %> 
+           </div>
        
-       <div class="create">
-         <%= form.submit 'Create Book' %>
-       </div>
-     
-     
+           <div class="create">
+             <%= form.submit 'Create Book' %>
+           </div>
+         
      <% end %>
    　
 

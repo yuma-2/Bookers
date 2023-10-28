@@ -37,39 +37,6 @@ body {
   font-size: 13px;
 }
 
-.book-title {
-  display: block;
-  font-size: 13px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-bottom: 7px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.book-body {
-  display: block;
-  font-size: 13px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-bottom: 7px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.book1 {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 280px;
-  font-size: 13px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  
-}
-
 .book-link {
   padding-bottom: 7px;
 }
@@ -137,12 +104,16 @@ td {
   margin-bottom: 0;
 }
 
-.create {
+.error {
+  background-color: red;
 }
 
-.center {
-  position: relative;
+.create {
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 0;
 }
+
 
 form {
   display: block;
@@ -178,6 +149,10 @@ form {
   list-style: square;
   margin: 33px;
   padding-left: 40px;
+}
+
+#error_explanation fo {
+  background-color: red;
 }
 
 .field_with_errors {
